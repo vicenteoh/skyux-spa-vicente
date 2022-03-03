@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Debug SKY UX",
-            "type": "node2",
+            "type": "node",
             "request": "launch",
             "program": "${workspaceRoot}/../skyux-cli/bin/skyux.js",
             "stopOnEntry": false,
@@ -25,18 +25,28 @@
             "outFiles": []
         },
         {
-          "type": "edge",
-          "request": "attach",
-          "name": "Attach to Microsoft Edge",
-          "port": 9222,
-          "webRoot": "${workspaceFolder}"
+            "name": "Launch Chrome against localhost, with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:4200",
+            // This forces chrome to run a brand new instance, allowing existing
+            // chrome windows to stay open.
+            "userDataDir": "${workspaceRoot}/.vscode/chrome",
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}",
+            //"diagnosticLogging": true,
+            "sourceMapPathOverrides": { "webpack:///./*": "${webRoot}/*" }
         },
         {
-          "type": "chrome",
-          "request": "attach",
-          "name": "Attach to Chrome",
-          "port": 9222,
-          "webRoot": "${workspaceFolder}"
+            "name": "Attach to Chrome, with sourcemaps",
+            "type": "chrome",
+            "request": "attach",
+            "url": "http://localhost:4200",
+            "port": 9222,
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}",
+            "diagnosticLogging": true,
+            "sourceMapPathOverrides": { "webpack:///./*": "${webRoot}/*" }
         }
     ]
 }
