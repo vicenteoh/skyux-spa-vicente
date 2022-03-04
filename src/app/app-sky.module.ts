@@ -12,12 +12,14 @@ import {
 } from '@skyux/indicators';
 
 import {
-  SkyFluidGridModule
+  SkyFluidGridModule,
+  SkyCardModule
 } from '@skyux/layout';
 
 import {
   SkyNavbarModule
 } from '@skyux/navbar';
+
 
 @NgModule({
   exports: [
@@ -25,7 +27,8 @@ import {
     SkyAlertModule,
     SkyKeyInfoModule,
     SkyFluidGridModule,
-    SkyNavbarModule
+    SkyNavbarModule,
+    SkyCardModule
   ]
 })
 export class AppSkyModule { }
