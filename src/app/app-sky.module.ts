@@ -20,6 +20,10 @@ import {
   SkyNavbarModule
 } from '@skyux/navbar';
 
+import {
+  
+} from '@skyux/lists';
+
 
 @NgModule({
   exports: [
