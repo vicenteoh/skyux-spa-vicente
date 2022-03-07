@@ -21,8 +21,8 @@ import {
 } from '@skyux/navbar';
 
 import {
-  
-} from '@skyux/lists';
+  SkyAppLinkModule
+} from '@skyux/router';
 
 
 @NgModule({
@@ -32,7 +32,8 @@ import {
     SkyKeyInfoModule,
     SkyFluidGridModule,
     SkyNavbarModule,
-    SkyCardModule
+    SkyCardModule,
+    SkyAppLinkModule
   ]
 })
 export class AppSkyModule { }
