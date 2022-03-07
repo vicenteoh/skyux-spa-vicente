@@ -16,7 +16,7 @@
     "_description": "Title for the home component"
   },
   "app_nav_demo": {
-    "message": "Demo ",
+    "message": "Demo",
     "_description": "The text for the Demo top-level navigation item"
   }
 }
