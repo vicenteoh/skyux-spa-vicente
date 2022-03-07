@@ -18,5 +18,9 @@
   "app_nav_demo": {
     "message": "Demo",
     "_description": "The text for the Demo top-level navigation item"
+  },
+  "app_nav_input": {
+    "message": "Input Module",
+    "_description": "The text for the Demo top-level navigation item"
   }
 }
